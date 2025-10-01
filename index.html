@@ -44,7 +44,7 @@
     /* Hero Section */
     .hero {
       height: 100vh;
-      background: url('images/hero.jpg') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -77,7 +77,7 @@
       background: #e64a19;
     }
 
-    /* Sections */
+    /* Section Layout */
     section {
       padding: 100px 40px;
       display: flex;
@@ -149,91 +149,88 @@
   </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="#brand">Brand</a>
+      <a href="#print">Print</a>
+      <a href="#book">Book</a>
+      <a href="#sports">Sports</a>
+      <a href="#digital">Digital</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <nav>
-    <a href="#brand">Brand</a>
-    <a href="#print">Print</a>
-    <a href="#book">Book</a>
-    <a href="#sports">Sports</a>
-    <a href="#digital">Digital</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<!-- Hero -->
-<div class="hero">
-  <h1>SampleDesign Showcase</h1>
-  <p>Creative solutions in branding, print, books, sports visuals, and digital design.</p>
-  <a href="#brand">Explore Our Work</a>
-</div>
-
-<!-- Sections -->
-<section id="brand">
-  <div class="text">
-    <h2>Brand Design</h2>
-    <p>We create strong visual identities that resonate with audiences and help brands stand out.</p>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>SampleDesign Showcase</h1>
+    <p>Creative solutions in branding, print, books, sports visuals, and digital design.</p>
+    <a href="#brand">Explore Our Work</a>
   </div>
-  <img src="images/brand.jpg" alt="Brand Design">
-</section>
 
-<section id="print">
-  <img src="images/print.jpg" alt="Print Design">
-  <div class="text">
-    <h2>Print Design</h2>
-    <p>Eye-catching brochures, posters, and print campaigns designed to communicate your message effectively.</p>
-  </div>
-</section>
+  <!-- Sections -->
+  <section id="brand">
+    <div class="text">
+      <h2>Brand Design</h2>
+      <p>We build strong visual identities that resonate with audiences and help brands stand out.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=60" alt="Brand Design">
+  </section>
 
-<section id="book">
-  <div class="text">
-    <h2>Book Design</h2>
-    <p>From cover art to elegant layouts, our book designs bring stories to life.</p>
-  </div>
-  <img src="images/book.jpg" alt="Book Design">
-</section>
+  <section id="print">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=60" alt="Print Design">
+    <div class="text">
+      <h2>Print Design</h2>
+      <p>Eye-catching brochures, posters, and campaigns designed to communicate your message effectively.</p>
+    </div>
+  </section>
 
-<section id="sports">
-  <img src="images/sports.jpg" alt="Sports Design">
-  <div class="text">
-    <h2>Sports Design</h2>
-    <p>Dynamic graphics for teams, events, and sports campaigns that inspire energy and excitement.</p>
-  </div>
-</section>
+  <section id="book">
+    <div class="text">
+      <h2>Book Design</h2>
+      <p>From cover art to elegant layouts, our book designs bring stories to life.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=60" alt="Book Design">
+  </section>
 
-<section id="digital">
-  <div class="text">
-    <h2>Digital Design</h2>
-    <p>Modern UI/UX, websites, and social media creatives built to engage audiences online.</p>
-  </div>
-  <img src="images/digital.jpg" alt="Digital Design">
-</section>
+  <section id="sports">
+    <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=60" alt="Sports Design">
+    <div class="text">
+      <h2>Sports Design</h2>
+      <p>Dynamic graphics for teams, events, and sports campaigns that inspire energy and excitement.</p>
+    </div>
+  </section>
 
-<section id="contact">
-  <div class="text">
-    <h2>Contact Us</h2>
-    <p>Email us at <strong>hello@sampledesign.com</strong> or connect with us on social media.</p>
-  </div>
-  <img src="images/contact.jpg" alt="Contact">
-</section>
+  <section id="digital">
+    <div class="text">
+      <h2>Digital Design</h2>
+      <p>Modern UI/UX, websites, and social media creatives built to engage audiences online.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=60" alt="Digital Design">
+  </section>
 
-<footer>
-  <p>© 2025 SampleDesign. All rights reserved.</p>
-</footer>
+  <section id="contact">
+    <div class="text">
+      <h2>Contact Us</h2>
+      <p>Email us at <strong>hello@sampledesign.com</strong> or connect with us on social media.</p>
+    </div>
+  </section>
 
-<button class="back-to-top" onclick="scrollToTop()">↑ Top</button>
+  <footer>
+    <p>© 2025 SampleDesign. All rights reserved.</p>
+  </footer>
 
-<script>
-  // Back-to-top button
-  window.addEventListener('scroll', () => {
-    const btn = document.querySelector('.back-to-top');
-    if (window.scrollY > 300) btn.style.display = 'block';
-    else btn.style.display = 'none';
-  });
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
+  <button class="back-to-top" onclick="scrollToTop()">↑ Top</button>
 
+  <script>
+    // Show back-to-top
+    window.addEventListener('scroll', () => {
+      const btn = document.querySelector('.back-to-top');
+      if (window.scrollY > 300) btn.style.display = 'block';
+      else btn.style.display = 'none';
+    });
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
