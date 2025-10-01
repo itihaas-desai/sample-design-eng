@@ -7,11 +7,13 @@
   <style>
     body {
       margin: 0;
-      font-family: sans-serif;
-      background: #fff;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f9f9f9;
       color: #333;
       scroll-behavior: smooth;
     }
+
+    /* Header */
     header {
       position: fixed;
       top: 0;
@@ -29,16 +31,45 @@
     header nav a {
       text-decoration: none;
       color: #444;
-      font-weight: 500;
+      font-weight: 600;
       padding: 6px 12px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
     }
     header nav a:hover {
+      background: #f3f3f3;
       color: #000;
     }
+
+    /* Sections */
     section {
-      padding: 100px 20px 60px; /* push below fixed header */
-      min-height: 60vh;
+      padding: 100px 20px 60px;
+      min-height: 70vh;
+      text-align: center;
     }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    section p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+      color: #555;
+    }
+    section img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    section img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Back to top button */
     .back-to-top {
       position: fixed;
       bottom: 20px;
@@ -50,28 +81,58 @@
       border-radius: 8px;
       cursor: pointer;
       display: none;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
   <header>
     <nav>
-      <a href="#brand">Brand Design</a>
-      <a href="#print">Print Design</a>
-      <a href="#book">Book Design</a>
-      <a href="#sports">Sports Design</a>
-      <a href="#digital">Digital Design</a>
+      <a href="#brand">Brand</a>
+      <a href="#print">Print</a>
+      <a href="#book">Book</a>
+      <a href="#sports">Sports</a>
+      <a href="#digital">Digital</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="brand"><h2>Brand Design</h2><p>Logo work, brand identity etc.</p></section>
-    <section id="print"><h2>Print Design</h2><p>Brochures, flyers, layouts.</p></section>
-    <section id="book"><h2>Book Design</h2><p>Cover + interior layout.</p></section>
-    <section id="sports"><h2>Sports Design</h2><p>Posters, event visuals.</p></section>
-    <section id="digital"><h2>Digital Design</h2><p>UI, web, digital assets.</p></section>
-    <section id="contact"><h2>Contact</h2><p>Form or email etc.</p></section>
+    <section id="brand">
+      <h2>Brand Design</h2>
+      <p>Logo work, brand identity and corporate visual language.</p>
+      <img src="https://source.unsplash.com/800x500/?branding,logo" alt="Brand Design">
+    </section>
+
+    <section id="print">
+      <h2>Print Design</h2>
+      <p>Creative layouts for brochures, flyers, posters, and print campaigns.</p>
+      <img src="https://source.unsplash.com/800x500/?print,brochure" alt="Print Design">
+    </section>
+
+    <section id="book">
+      <h2>Book Design</h2>
+      <p>Eye-catching covers and elegant interior layouts for books and magazines.</p>
+      <img src="https://source.unsplash.com/800x500/?book,cover" alt="Book Design">
+    </section>
+
+    <section id="sports">
+      <h2>Sports Design</h2>
+      <p>Posters, team graphics, and high-energy sports visuals.</p>
+      <img src="https://source.unsplash.com/800x500/?sports,poster" alt="Sports Design">
+    </section>
+
+    <section id="digital">
+      <h2>Digital Design</h2>
+      <p>Modern UI/UX, responsive websites, and social media creatives.</p>
+      <img src="https://source.unsplash.com/800x500/?ui,website" alt="Digital Design">
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach us via email at <strong>hello@sampledesign.com</strong> or use our contact form.</p>
+      <img src="https://source.unsplash.com/800x500/?contact,email" alt="Contact">
+    </section>
   </main>
 
   <button class="back-to-top" onclick="scrollToTop()">↑ Top</button>
